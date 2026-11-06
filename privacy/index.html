@@ -8,7 +8,7 @@
   :root { --bg: #fbf8f1; --fg: #1d1d1b; --muted: #5d5a52; --line: #e3ddcf; --accent: #2f5d8a; }
   @media (prefers-color-scheme: dark) { :root { --bg: #17171a; --fg: #ecebe6; --muted: #a9a69c; --line: #33333a; --accent: #8db4dc; } }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Segoe UI", "Noto Sans KR", sans-serif; }
   main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
   nav { position: sticky; top: 0; background: var(--bg); padding: 12px 0; border-bottom: 1px solid var(--line); display: flex; gap: 8px; flex-wrap: wrap; }
   nav a { color: var(--accent); text-decoration: none; padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; }
@@ -28,7 +28,6 @@
 <nav aria-label="Language">
   <a href="#ko" lang="ko">한국어</a>
   <a href="#en" lang="en">English</a>
-  <a href="#ja" lang="ja">日本語</a>
 </nav>
 
 <section id="ko" lang="ko">
@@ -123,51 +122,6 @@
 <p>junelap · <a href="mailto:junemicrolap@gmail.com">junemicrolap@gmail.com</a></p>
 </section>
 
-<section id="ja" lang="ja">
-<h1>NewsHanip プライバシーポリシー</h1>
-<p class="date">施行日: 2026年11月6日 · 開発者: junelap</p>
-<p>「NewsHanip」(以下「本アプリ」)は、個人開発者 junelap が作成した Android アプリです。本ポリシーでは、本アプリが扱う情報と、その情報の送信先を説明します。</p>
-
-<h2>1. 開発者が収集する情報</h2>
-<p>開発者は利用者の個人情報を収集しません。会員登録・ログインはなく、開発者が運営するサーバーもありません。広告・分析・クラッシュレポートのツールも組み込んでいません。</p>
-
-<h2>2. 本アプリの接続先</h2>
-<p>本アプリは以下の目的でのみインターネットに接続します。接続の際には IP アドレスなどの一般的な通信情報が各サイトに届き、各サイトのプライバシーポリシーに従って扱われます。本アプリが利用者を特定する情報を付け加えることはありません。</p>
-<ul>
-  <li><b>報道機関の RSS</b>: 聯合ニュース、ハンギョレ、東亜日報、京郷新聞、朝鮮日報、SBS、毎日経済、電子新聞、BBC、The Guardian、The New York Times、Al Jazeera、DW、NPR から、記事の見出し・概要・リンク・公開日時を取得します。アプリを開いたとき、引っ張って更新したとき、途切れた接続が戻ったときだけ取得し、アプリを使っていない間は接続しません。</li>
-  <li><b>記事の写真</b>: 写真付きの表示方法を選ぶと、記事の画像を読み込み、画像のない記事については代表画像を探すため記事ページに接続します。</li>
-  <li><b>相場</b>: 利用者が選んだ銘柄コード(例: KRW=X、KRW-BTC)のみを Yahoo Finance(query1.finance.yahoo.com)と Upbit(api.upbit.com)に送ります。</li>
-  <li><b>記事品質モデル</b>: 初回のみ、Wi-Fi など従量課金でない回線で Hugging Face(huggingface.co)から文章分析モデル(約135MB)をダウンロードします。</li>
-  <li><b>アプリ内ブラウザ</b>: 記事をタップすると、報道機関のページがアプリ内ブラウザ(設定により外部ブラウザ)で開きます。そのサイトが Cookie を保存したり独自の分析ツールを使ったりすることがあり、それらは各サイトのポリシーに従います。</li>
-  <li><b>動画タブ</b>: 放送局の YouTube のリンクを YouTube アプリまたはブラウザで開きます。本アプリが動画をダウンロードすることはありません。</li>
-</ul>
-
-<h2>3. Google ML Kit(端末内 AI・翻訳)</h2>
-<p>一行要約は端末に内蔵された Gemini Nano(Google AICore、ML Kit GenAI)が、海外記事の見出し翻訳は ML Kit 翻訳が、それぞれ端末内で作成します。要約・翻訳に使う記事の内容は端末内で処理されます。翻訳モデルと AI モデルは、初めて使うときに Google からダウンロードされます。</p>
-<p>Google は、ML Kit が診断と利用状況の分析のために次の情報を収集すると公表しています: 端末情報(メーカー・機種・OS バージョン)、アプリ情報(パッケージ名・バージョン)、インストールごとの識別子(利用者や端末を特定する目的ではないもの)、パフォーマンス指標、機能の設定・入出力のサイズ・エラーコード、設定した言語。Google によると、これらの情報は HTTPS で暗号化して送信され、第三者には提供されません。詳しくは <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit のデータ開示</a>をご覧ください。</p>
-
-<h2>4. 端末内にのみ保存される情報</h2>
-<ul>
-  <li>取得した記事(24時間後に削除)、最後に取得した相場、最後の要約(次回すぐ表示するため)</li>
-  <li>設定: 言語、表示モード、相場の項目、タブの順番、表示方法、要約カードの色、リンクの開き方、記事フィルター、パーソナライズ、海外ニュース、アプリアイコン</li>
-  <li>記事の分析結果(文章ベクトル・品質スコア。記事とともに削除)</li>
-  <li>「この記事はいまいち」の記録: 選んだ理由、その記事の見出し・リンク・文章ベクトル、日時。端末名やアカウントなどの識別情報は含みません。「パーソナライズをリセット」で「興味なし」の記録を消去できます。本アプリがこの記録を送信することはなく、「フィードバックを書き出す」を選んだ場合のみ、利用者が指定した場所にファイルとして保存します。</li>
-  <li>アプリ内ブラウザの Cookie とキャッシュ</li>
-</ul>
-<p>アプリを削除すると、これらの情報も削除されます。Android のバックアップがオンの場合、Android がアプリのデータを利用者の Google アカウントのバックアップに含めることがあり、これは Google のバックアップポリシーに従います。</p>
-
-<h2>5. お問い合わせメール</h2>
-<p>設定の「メールでお問い合わせ」をタップすると、件名とアプリのバージョン・Android のバージョン・端末の機種が入力された状態でメールアプリが開きます。利用者が自分で送信するまで何も送られず、内容は自由に編集できます。</p>
-
-<h2>6. 子ども</h2>
-<p>本アプリは、子どもを含むいかなる利用者の個人情報も収集しません。</p>
-
-<h2>7. 変更</h2>
-<p>扱う情報が変わった場合は、このページと施行日を更新します。</p>
-
-<h2>8. お問い合わせ</h2>
-<p>junelap · <a href="mailto:junemicrolap@gmail.com">junemicrolap@gmail.com</a></p>
-</section>
 </main>
 </body>
 </html>
