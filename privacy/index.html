@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>뉴스한입 개인정보처리방침 · NewsHanip Privacy Policy</title>
+<style>
+  :root { --bg: #fbf8f1; --fg: #1d1d1b; --muted: #5d5a52; --line: #e3ddcf; --accent: #2f5d8a; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #17171a; --fg: #ecebe6; --muted: #a9a69c; --line: #33333a; --accent: #8db4dc; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  nav { position: sticky; top: 0; background: var(--bg); padding: 12px 0; border-bottom: 1px solid var(--line); display: flex; gap: 8px; flex-wrap: wrap; }
+  nav a { color: var(--accent); text-decoration: none; padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; }
+  h1 { font-size: 26px; line-height: 1.3; margin: 32px 0 4px; }
+  h2 { font-size: 18px; margin: 28px 0 8px; }
+  .date { color: var(--muted); font-size: 14px; margin: 0; }
+  section { border-bottom: 1px solid var(--line); padding-bottom: 32px; scroll-margin-top: 56px; }
+  section:last-of-type { border-bottom: 0; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  code { font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Language">
+  <a href="#ko" lang="ko">한국어</a>
+  <a href="#en" lang="en">English</a>
+  <a href="#ja" lang="ja">日本語</a>
+</nav>
+
+<section id="ko" lang="ko">
+<h1>뉴스한입 개인정보처리방침</h1>
+<p class="date">시행일: 2026년 11월 6일 · 개발자: junelap</p>
+<p>"뉴스한입"(이하 "앱")은 개인 개발자 junelap이 만든 안드로이드 앱입니다. 이 방침은 앱이 다루는 정보와 그 정보가 어디로 가는지 설명합니다.</p>
+
+<h2>1. 개발자가 수집하는 정보</h2>
+<p>개발자는 이용자의 개인정보를 수집하지 않습니다. 회원가입·로그인이 없고, 개발자가 운영하는 서버가 없으며, 광고·분석·오류 보고 도구를 넣지 않았습니다.</p>
+
+<h2>2. 앱이 접속하는 곳</h2>
+<p>앱은 아래 목적으로만 인터넷에 접속합니다. 접속할 때 IP 주소 같은 일반적인 접속 정보가 해당 사이트에 전달되며, 각 사이트의 개인정보처리방침에 따라 처리됩니다. 앱이 이용자를 식별하는 정보를 덧붙이지는 않습니다.</p>
+<ul>
+  <li><b>언론사 RSS</b>: 연합뉴스, 한겨레, 동아일보, 경향신문, 조선일보, SBS, 매일경제, 전자신문, BBC, The Guardian, The New York Times, Al Jazeera, DW, NPR에서 기사 제목·요약문·링크·발행 시각을 받습니다. 앱을 열 때, 당겨서 새로고침 할 때, 끊겼던 인터넷 연결이 돌아왔을 때만 받으며, 앱을 쓰지 않는 동안에는 접속하지 않습니다.</li>
+  <li><b>기사 사진</b>: 사진이 보이는 보기 방식을 고르면 기사 사진과, 사진이 없는 기사의 대표 이미지를 찾기 위해 기사 페이지에 접속합니다.</li>
+  <li><b>시세</b>: Yahoo Finance(query1.finance.yahoo.com)와 업비트(api.upbit.com)에 이용자가 고른 시세 기호(예: KRW=X, KRW-BTC)만 보냅니다.</li>
+  <li><b>기사 품질 모델</b>: 처음 한 번, 데이터 요금이 없는 망(Wi-Fi 등)에서 Hugging Face(huggingface.co)에서 문장 분석 모델(약 135MB)을 받습니다.</li>
+  <li><b>앱 안 브라우저</b>: 기사를 누르면 앱 안 브라우저(설정에 따라 외부 브라우저)로 언론사 페이지가 열립니다. 이때 그 사이트가 쿠키를 저장하거나 자체 분석 도구를 쓸 수 있으며, 이는 해당 사이트의 방침을 따릅니다.</li>
+  <li><b>영상 탭</b>: 방송사 유튜브 주소를 유튜브 앱이나 브라우저로 엽니다. 앱이 영상을 받아 오지는 않습니다.</li>
+</ul>
+
+<h2>3. Google ML Kit(기기 안 AI·번역)</h2>
+<p>한 줄 요약은 기기에 내장된 Gemini Nano(Google AICore, ML Kit GenAI)가, 해외 기사 제목 번역은 ML Kit 번역이 기기 안에서 만듭니다. 요약·번역에 쓰는 기사 내용은 기기 안에서 처리됩니다. 번역 모델과 AI 모델은 처음 쓸 때 Google에서 받습니다.</p>
+<p>Google은 ML Kit가 진단과 사용 분석을 위해 다음 정보를 수집한다고 밝히고 있습니다: 기기 정보(제조사·모델·OS 버전), 앱 정보(패키지 이름·버전), 설치마다 다른 식별자(이용자나 기기를 식별하려는 것이 아님), 성능 지표, 기능 설정·입출력 크기·오류 코드, 설정한 언어. Google에 따르면 이 정보는 HTTPS로 암호화해 전송되며 제3자에게 넘기지 않습니다. 자세한 내용은 <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit 데이터 공개</a>를 참고하세요.</p>
+
+<h2>4. 기기 안에만 저장되는 정보</h2>
+<ul>
+  <li>받아 온 기사(24시간이 지나면 삭제), 마지막으로 받은 시세, 마지막 요약(앱을 다시 열 때 바로 보여 주기 위해)</li>
+  <li>설정: 언어, 화면 모드, 시세 항목, 탭 순서, 보기 방식, 요약 카드 색, 링크 열기, 기사 필터, 개인 맞춤, 해외 기사, 앱 아이콘</li>
+  <li>기사 분석 결과(문장 벡터·품질 점수, 기사와 함께 삭제)</li>
+  <li>"이 기사 별로예요" 기록: 고른 이유, 그 기사의 제목·주소·문장 벡터, 시각. 기기 이름·계정 같은 식별 정보는 없습니다. "개인 학습 초기화"로 "관심 없음" 기록을 지울 수 있습니다. 앱은 이 기록을 보내지 않으며, 이용자가 "피드백 내보내기"를 고르면 이용자가 정한 위치에 파일로만 저장합니다.</li>
+  <li>앱 안 브라우저의 쿠키·캐시</li>
+</ul>
+<p>앱을 삭제하면 위 정보도 삭제됩니다. Android 백업이 켜져 있으면 Android가 앱 데이터를 이용자의 Google 계정 백업에 포함할 수 있으며, 이는 Google의 백업 정책을 따릅니다.</p>
+
+<h2>5. 문의 메일</h2>
+<p>설정의 "이메일 문의"를 누르면 메일 앱이 열리고 제목과 앱 버전·Android 버전·기기 모델이 미리 채워집니다. 이용자가 직접 보내기 전에는 아무것도 전송되지 않으며, 보낼 내용은 이용자가 고칠 수 있습니다.</p>
+
+<h2>6. 아동</h2>
+<p>앱은 아동을 포함한 어떤 이용자의 개인정보도 수집하지 않습니다.</p>
+
+<h2>7. 방침 변경</h2>
+<p>다루는 정보가 바뀌면 이 페이지를 고치고 시행일을 바꿉니다.</p>
+
+<h2>8. 문의</h2>
+<p>junelap · <a href="mailto:junemicrolap@gmail.com">junemicrolap@gmail.com</a></p>
+</section>
+
+<section id="en" lang="en">
+<h1>NewsHanip Privacy Policy</h1>
+<p class="date">Effective November 6, 2026 · Developer: junelap</p>
+<p>NewsHanip ("the app") is an Android app made by independent developer junelap. This policy explains what information the app handles and where it goes.</p>
+
+<h2>1. Information the developer collects</h2>
+<p>The developer does not collect your personal information. There is no sign-up or login, no server run by the developer, and no advertising, analytics, or crash-reporting tools in the app.</p>
+
+<h2>2. Where the app connects</h2>
+<p>The app connects to the internet only for the purposes below. As with any connection, standard information such as your IP address reaches those sites and is handled under their own privacy policies. The app does not add anything that identifies you.</p>
+<ul>
+  <li><b>News RSS feeds</b>: headlines, short descriptions, links, and publish times from Yonhap, Hankyoreh, Dong-A Ilbo, Kyunghyang, Chosun Ilbo, SBS, Maeil Business, Electronic Times, BBC, The Guardian, The New York Times, Al Jazeera, DW, and NPR. Fetched only when you open the app, pull to refresh, or your connection comes back while the app is open; nothing is fetched in the background.</li>
+  <li><b>Article photos</b>: if you choose a layout with photos, the app loads article images and visits article pages to find a preview image for articles without one.</li>
+  <li><b>Market data</b>: only the symbols you choose (for example KRW=X, KRW-BTC) are sent to Yahoo Finance (query1.finance.yahoo.com) and Upbit (api.upbit.com).</li>
+  <li><b>Article quality model</b>: once, on an unmetered network such as Wi-Fi, the app downloads a text analysis model (about 135 MB) from Hugging Face (huggingface.co).</li>
+  <li><b>In-app browser</b>: tapping an article opens the outlet's page in the in-app browser (or your external browser, depending on settings). Those sites may set cookies or use their own analytics under their own policies.</li>
+  <li><b>Video tab</b>: opens broadcasters' YouTube links in the YouTube app or a browser. The app does not download videos.</li>
+</ul>
+
+<h2>3. Google ML Kit (on-device AI and translation)</h2>
+<p>One-line summaries are generated on your device by Gemini Nano (Google AICore, ML Kit GenAI), and foreign headlines are translated on your device by ML Kit Translation. Article text used for summaries and translation is processed on the device. The translation and AI models are downloaded from Google the first time they are used.</p>
+<p>Google states that ML Kit collects the following for diagnostics and usage analytics: device information (manufacturer, model, OS version), app information (package name, version), per-installation identifiers (not intended to identify a user or physical device), performance metrics, feature configuration, input/output size, error codes, and configured languages. According to Google, this data is encrypted in transit with HTTPS and is not transferred to third parties. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a>.</p>
+
+<h2>4. Information stored only on your device</h2>
+<ul>
+  <li>Downloaded articles (deleted after 24 hours), the last market data, and the last summary (so it can be shown immediately next time)</li>
+  <li>Settings: language, display mode, market items, tab order, article layout, summary card color, link opening, article filter, personalization, foreign news, app icon</li>
+  <li>Article analysis results (text vectors and quality scores, deleted with the articles)</li>
+  <li>"Not a good article" records: the reason you chose, the article's headline, link, and text vector, and the time. No device name or account. You can clear "Not interested" records with "Reset personalization". The app never sends these records; "Export feedback" only saves a file to a location you choose.</li>
+  <li>Cookies and cache of the in-app browser</li>
+</ul>
+<p>Uninstalling the app deletes this information. If Android backup is on, Android may include app data in your Google account backup under Google's backup policy.</p>
+
+<h2>5. Contact email</h2>
+<p>"Email us" in Settings opens your mail app with a subject and your app version, Android version, and device model filled in. Nothing is sent until you send it yourself, and you can edit the message.</p>
+
+<h2>6. Children</h2>
+<p>The app does not collect personal information from anyone, including children.</p>
+
+<h2>7. Changes</h2>
+<p>If the information the app handles changes, this page and its effective date will be updated.</p>
+
+<h2>8. Contact</h2>
+<p>junelap · <a href="mailto:junemicrolap@gmail.com">junemicrolap@gmail.com</a></p>
+</section>
+
+<section id="ja" lang="ja">
+<h1>NewsHanip プライバシーポリシー</h1>
+<p class="date">施行日: 2026年11月6日 · 開発者: junelap</p>
+<p>「NewsHanip」(以下「本アプリ」)は、個人開発者 junelap が作成した Android アプリです。本ポリシーでは、本アプリが扱う情報と、その情報の送信先を説明します。</p>
+
+<h2>1. 開発者が収集する情報</h2>
+<p>開発者は利用者の個人情報を収集しません。会員登録・ログインはなく、開発者が運営するサーバーもありません。広告・分析・クラッシュレポートのツールも組み込んでいません。</p>
+
+<h2>2. 本アプリの接続先</h2>
+<p>本アプリは以下の目的でのみインターネットに接続します。接続の際には IP アドレスなどの一般的な通信情報が各サイトに届き、各サイトのプライバシーポリシーに従って扱われます。本アプリが利用者を特定する情報を付け加えることはありません。</p>
+<ul>
+  <li><b>報道機関の RSS</b>: 聯合ニュース、ハンギョレ、東亜日報、京郷新聞、朝鮮日報、SBS、毎日経済、電子新聞、BBC、The Guardian、The New York Times、Al Jazeera、DW、NPR から、記事の見出し・概要・リンク・公開日時を取得します。アプリを開いたとき、引っ張って更新したとき、途切れた接続が戻ったときだけ取得し、アプリを使っていない間は接続しません。</li>
+  <li><b>記事の写真</b>: 写真付きの表示方法を選ぶと、記事の画像を読み込み、画像のない記事については代表画像を探すため記事ページに接続します。</li>
+  <li><b>相場</b>: 利用者が選んだ銘柄コード(例: KRW=X、KRW-BTC)のみを Yahoo Finance(query1.finance.yahoo.com)と Upbit(api.upbit.com)に送ります。</li>
+  <li><b>記事品質モデル</b>: 初回のみ、Wi-Fi など従量課金でない回線で Hugging Face(huggingface.co)から文章分析モデル(約135MB)をダウンロードします。</li>
+  <li><b>アプリ内ブラウザ</b>: 記事をタップすると、報道機関のページがアプリ内ブラウザ(設定により外部ブラウザ)で開きます。そのサイトが Cookie を保存したり独自の分析ツールを使ったりすることがあり、それらは各サイトのポリシーに従います。</li>
+  <li><b>動画タブ</b>: 放送局の YouTube のリンクを YouTube アプリまたはブラウザで開きます。本アプリが動画をダウンロードすることはありません。</li>
+</ul>
+
+<h2>3. Google ML Kit(端末内 AI・翻訳)</h2>
+<p>一行要約は端末に内蔵された Gemini Nano(Google AICore、ML Kit GenAI)が、海外記事の見出し翻訳は ML Kit 翻訳が、それぞれ端末内で作成します。要約・翻訳に使う記事の内容は端末内で処理されます。翻訳モデルと AI モデルは、初めて使うときに Google からダウンロードされます。</p>
+<p>Google は、ML Kit が診断と利用状況の分析のために次の情報を収集すると公表しています: 端末情報(メーカー・機種・OS バージョン)、アプリ情報(パッケージ名・バージョン)、インストールごとの識別子(利用者や端末を特定する目的ではないもの)、パフォーマンス指標、機能の設定・入出力のサイズ・エラーコード、設定した言語。Google によると、これらの情報は HTTPS で暗号化して送信され、第三者には提供されません。詳しくは <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit のデータ開示</a>をご覧ください。</p>
+
+<h2>4. 端末内にのみ保存される情報</h2>
+<ul>
+  <li>取得した記事(24時間後に削除)、最後に取得した相場、最後の要約(次回すぐ表示するため)</li>
+  <li>設定: 言語、表示モード、相場の項目、タブの順番、表示方法、要約カードの色、リンクの開き方、記事フィルター、パーソナライズ、海外ニュース、アプリアイコン</li>
+  <li>記事の分析結果(文章ベクトル・品質スコア。記事とともに削除)</li>
+  <li>「この記事はいまいち」の記録: 選んだ理由、その記事の見出し・リンク・文章ベクトル、日時。端末名やアカウントなどの識別情報は含みません。「パーソナライズをリセット」で「興味なし」の記録を消去できます。本アプリがこの記録を送信することはなく、「フィードバックを書き出す」を選んだ場合のみ、利用者が指定した場所にファイルとして保存します。</li>
+  <li>アプリ内ブラウザの Cookie とキャッシュ</li>
+</ul>
+<p>アプリを削除すると、これらの情報も削除されます。Android のバックアップがオンの場合、Android がアプリのデータを利用者の Google アカウントのバックアップに含めることがあり、これは Google のバックアップポリシーに従います。</p>
+
+<h2>5. お問い合わせメール</h2>
+<p>設定の「メールでお問い合わせ」をタップすると、件名とアプリのバージョン・Android のバージョン・端末の機種が入力された状態でメールアプリが開きます。利用者が自分で送信するまで何も送られず、内容は自由に編集できます。</p>
+
+<h2>6. 子ども</h2>
+<p>本アプリは、子どもを含むいかなる利用者の個人情報も収集しません。</p>
+
+<h2>7. 変更</h2>
+<p>扱う情報が変わった場合は、このページと施行日を更新します。</p>
+
+<h2>8. お問い合わせ</h2>
+<p>junelap · <a href="mailto:junemicrolap@gmail.com">junemicrolap@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>
