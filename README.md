@@ -11,6 +11,8 @@
 
 ## 내려받기
 
+> **0.x 버전을 쓰던 분께:** 1.0.0부터 앱 ID가 바뀌어(`com.junelap.newshanip`) 예전 앱의 업데이트가 아니라 **새 앱으로 따로 설치**됩니다. 1.0.0을 설치한 뒤 예전 "뉴스한입"은 지워 주세요(설정·"관심 없음" 기록은 옮겨지지 않습니다). Obtainium을 쓰고 있다면 예전 항목을 지우고 아래 방법으로 다시 추가해 주세요.
+
 **[최신 버전 내려받기](https://github.com/YoonJuneLim/newshanip-releases/releases/latest)** → 아래 Assets에서 `NewsHanip-vX.Y.Z.apk`를 누르세요.
 
 - 안드로이드 8.0 이상, 64비트 폰(최근 5년 안에 나온 폰은 대부분 됩니다)
